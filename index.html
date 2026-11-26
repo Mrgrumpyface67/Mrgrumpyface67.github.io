@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smash Karts - GrumpyGames</title>
+  <style>
+    body { margin: 0; background: #0c0d14; color: white; font-family: Arial, sans-serif; display: flex; flex-direction: column; height: 100vh; }
+    .topbar { background: #181a27; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #6c5ce7; }
+    a { color: #a29bfe; text-decoration: none; font-weight: bold; }
+    button { background: #6c5ce7; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+    button:hover { background: #5a4bd1; }
+    iframe { flex: 1; width: 100%; border: none; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a href="index.html">← Back to GrumpyGames</a>
+    <span>Smash Karts</span>
+    <button onclick="document.getElementById('gameframe').requestFullscreen()">⛶ Fullscreen</button>
+  </div>
+  <iframe id="gameframe" src="https://ghp2smashkarts.github.io/" allowfullscreen></iframe>
+</body>
+</html>
